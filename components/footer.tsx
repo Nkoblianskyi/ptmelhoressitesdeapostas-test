@@ -91,7 +91,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-mercedes-teal/30 pt-4 md:pt-6 text-center text-xs md:text-sm text-mercedes-light-grey">
-          <p>© {new Date().getFullYear()} portugalapostasdesportivas.com. Todos os direitos reservados.</p>
+          <p>© {new Date().getFullYear()} ptmelhoressitesdeapostas.com. Todos os direitos reservados.</p>
           <p className="mt-2">
             Jogue com responsabilidade. Apenas +18. Se precisa de ajuda:{" "}
             <Link href="tel:213950213" className="text-mercedes-teal hover:text-mercedes-teal-light transition-colors">
