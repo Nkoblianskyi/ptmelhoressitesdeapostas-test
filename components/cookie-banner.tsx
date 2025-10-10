@@ -33,7 +33,7 @@ export function CookieBanner() {
         Usamos cookies para personalizar a sua experiência. Ao usar este site, aceita o nosso uso de cookies.
       </p>
       <div className="flex justify-end space-x-2">
-        <Button onClick={handleAccept} size="sm" className="bg-portugal-green hover:bg-portugal-dark-green text-xs">
+        <Button onClick={handleAccept} size="sm" className="bg-portugal-green hover:bg-portugal-dark-green text-xs text-white">
           Aceitar
         </Button>
         <Button
