@@ -10,38 +10,38 @@
   --card-foreground: oklch(0.98 0 0);
   --popover: oklch(0.15 0 0);
   --popover-foreground: oklch(0.98 0 0);
-  --primary: oklch(0.65 0.15 195);
+  --primary: oklch(62.121% 0.14718 250.441);
   --primary-foreground: oklch(0.05 0 0);
   --secondary: oklch(0.75 0.02 240);
   --secondary-foreground: oklch(0.05 0 0);
   --muted: oklch(0.25 0 0);
   --muted-foreground: oklch(0.65 0 0);
-  --accent: oklch(0.65 0.15 195);
+  --accent: oklch(62.121% 0.14718 250.441);
   --accent-foreground: oklch(0.05 0 0);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.98 0 0);
   --border: oklch(0.25 0 0);
   --input: oklch(0.25 0 0);
-  --ring: oklch(0.65 0.15 195);
-  --chart-1: oklch(0.65 0.15 195);
+  --ring: oklch(62.121% 0.14718 250.441);
+  --chart-1: oklch(62.121% 0.14718 250.441);
   --chart-2: oklch(0.75 0.02 240);
   --chart-3: oklch(0.45 0.05 240);
-  --chart-4: oklch(0.55 0.1 195);
+  --chart-4: oklch(62.121% 0.14718 250.441);
   --chart-5: oklch(0.35 0.05 240);
   --radius: 0.5rem;
   --sidebar: oklch(0.15 0 0);
   --sidebar-foreground: oklch(0.98 0 0);
-  --sidebar-primary: oklch(0.65 0.15 195);
+  --sidebar-primary: oklch(62.121% 0.14718 250.441);
   --sidebar-primary-foreground: oklch(0.05 0 0);
   --sidebar-accent: oklch(0.25 0 0);
   --sidebar-accent-foreground: oklch(0.98 0 0);
   --sidebar-border: oklch(0.25 0 0);
-  --sidebar-ring: oklch(0.65 0.15 195);
+  --sidebar-ring: oklch(62.121% 0.14718 250.441);
 
   /* Mercedes F1 Colors - Petronas Teal, Silver, Black */
-  --mercedes-teal: oklch(0.65 0.15 195);
+  --mercedes-teal: oklch(62.121% 0.14718 250.441);
   --mercedes-teal-dark: oklch(0.45 0.12 195);
-  --mercedes-teal-light: oklch(0.75 0.12 195);
+  --mercedes-teal-light: oklch(62.121% 0.14718 250.441);
   --mercedes-silver: oklch(0.75 0.02 240);
   --mercedes-silver-dark: oklch(0.55 0.02 240);
   --mercedes-black: oklch(0.12 0 0);
@@ -56,7 +56,7 @@
   --card-foreground: oklch(0.98 0 0);
   --popover: oklch(0.15 0 0);
   --popover-foreground: oklch(0.98 0 0);
-  --primary: oklch(0.65 0.15 195);
+  --primary: oklch(62.121% 0.14718 250.441);
   --primary-foreground: oklch(0.05 0 0);
   --secondary: oklch(0.75 0.02 240);
   --secondary-foreground: oklch(0.05 0 0);
@@ -68,20 +68,20 @@
   --destructive-foreground: oklch(0.98 0 0);
   --border: oklch(0.25 0 0);
   --input: oklch(0.25 0 0);
-  --ring: oklch(0.65 0.15 195);
-  --chart-1: oklch(0.65 0.15 195);
+  --ring: oklch(62.121% 0.14718 250.441);
+  --chart-1: oklch(62.121% 0.14718 250.441);
   --chart-2: oklch(0.75 0.02 240);
   --chart-3: oklch(0.45 0.05 240);
   --chart-4: oklch(0.55 0.1 195);
   --chart-5: oklch(0.35 0.05 240);
   --sidebar: oklch(0.15 0 0);
   --sidebar-foreground: oklch(0.98 0 0);
-  --sidebar-primary: oklch(0.65 0.15 195);
+  --sidebar-primary: oklch(62.121% 0.14718 250.441);
   --sidebar-primary-foreground: oklch(0.05 0 0);
   --sidebar-accent: oklch(0.25 0 0);
   --sidebar-accent-foreground: oklch(0.98 0 0);
   --sidebar-border: oklch(0.25 0 0);
-  --sidebar-ring: oklch(0.65 0.15 195);
+  --sidebar-ring: oklch(62.121% 0.14718 250.441);
 }
 
 @theme inline {
