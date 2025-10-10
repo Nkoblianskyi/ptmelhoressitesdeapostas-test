@@ -15,7 +15,7 @@ import { FaqSection } from "@/components/faq-section"
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-mercedes-black md:bg-cover md:bg-center md:bg-fixed md:bg-no-repeat md:bg-[url('/stadium-background.png')]">
+    <div className="min-h-screen bg-mercedes-black md:bg-cover md:bg-center md:bg-fixed md:bg-no-repeat md:bg-[url('/152c1baa5698d83ca6faefadbd68946d.jpg')]">
       <Header />
       <main className="relative z-10 max-w-[1250px] mx-auto">
         <Hero />

@@ -5,6 +5,7 @@ import { AdvertiserInfoModal } from "./advertiser-info-modal"
 import { Smartphone, Award, CheckCircle } from "lucide-react"
 import Image from "next/image"
 
+
 export function Hero() {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
