@@ -41,7 +41,7 @@ export function RatingList({ sites }: RatingListProps) {
         <div className="grid gap-2">
           {sites.map((site, index) => {
             const isFirstPlace = index === 0
-            const showBadge = index < 3 && site.badges.length > 0
+            const showBadge = index < 4 && site.badges.length > 0
             const borderColor = isFirstPlace ? "border-green-500" : "border-mercedes-teal/40"
             const accentColor = isFirstPlace ? "green-500" : "mercedes-teal"
             const shadowColor = isFirstPlace ? "shadow-green-500/30" : "shadow-mercedes-teal/20"
@@ -62,10 +62,10 @@ export function RatingList({ sites }: RatingListProps) {
                 {showBadge && (
                   <div className="absolute top-0 left-0 z-10">
                     <div className="relative">
-                      <div className="bg-mercedes-teal text-mercedes-black text-xs font-black px-4 py-2 uppercase tracking-wider shadow-xl clip-path-badge">
+                      <div className="bg-green-500 text-mercedes-black text-xs font-black px-4 py-2 uppercase tracking-wider shadow-xl clip-path-badge">
                         {site.badges[0]}
                       </div>
-                      <div className="absolute -bottom-1 left-0 w-0 h-0 border-l-[20px] border-l-transparent border-t-[8px] border-t-mercedes-teal/80"></div>
+                    
                     </div>
                   </div>
                 )}

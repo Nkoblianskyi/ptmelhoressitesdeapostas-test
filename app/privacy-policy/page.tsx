@@ -11,7 +11,7 @@ export default function PrivacyPolicyPage() {
     >
       <PolicySection title="Introdução">
         <PolicyParagraph>
-          No portugalapostasdesportivas.com, respeitamos a sua privacidade e estamos comprometidos em proteger os seus
+          No ptmelhoressitesdeapostas.com, respeitamos a sua privacidade e estamos comprometidos em proteger os seus
           dados pessoais. Esta política de privacidade informá-lo-á sobre como cuidamos dos seus dados pessoais quando
           visita o nosso website e dir-lhe-á sobre os seus direitos de privacidade e como a lei o protege.
         </PolicyParagraph>
@@ -126,7 +126,7 @@ export default function PrivacyPolicyPage() {
       <PolicySection title="Contacte-nos" delay={1000}>
         <PolicyParagraph>
           Se tiver questões sobre esta política de privacidade ou as nossas práticas de privacidade, contacte-nos em:
-          privacidade@portugalapostasdesportivas.com
+          privacidade@ptmelhoressitesdeapostas.com
         </PolicyParagraph>
       </PolicySection>
     </PolicyPageLayout>

@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { AdvertiserInfoModal } from "./advertiser-info-modal"
 import { Shield, Smartphone, Award, CheckCircle } from "lucide-react"
+import Image from "next/image"
 
 export function Hero() {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -52,7 +53,7 @@ export function Hero() {
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-1.5 sm:gap-2 mb-2 sm:mb-3">
               <div className="bg-mercedes-black/60 border border-mercedes-teal/20 rounded p-1.5 sm:p-2 text-center hover:border-mercedes-teal/50 transition-colors">
-                <Shield className="w-4 h-4 sm:w-5 sm:h-5 mx-auto mb-0.5 sm:mb-1 text-mercedes-teal" />
+                <Image src="/flag.png" alt="legal" width={20} height={20} className="w-4 h-4 sm:w-5 sm:h-5 mx-auto mb-0.5 sm:mb-1 text-mercedes-teal" />
                 <p className="text-[9px] sm:text-[10px] md:text-xs font-bold text-white">100% Legal</p>
                 <p className="text-[7px] sm:text-[8px] md:text-[9px] text-mercedes-silver mt-0.5 hidden sm:block">
                   Licenciado

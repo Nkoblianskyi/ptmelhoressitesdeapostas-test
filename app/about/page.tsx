@@ -6,7 +6,7 @@ export default function AboutPage() {
     <PolicyPageLayout title="Sobre Nós" heroImage="/stadium-background.png" heroAlt="Estádio de futebol português">
       <div className="space-y-8">
         <div className="text-center mb-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-portugal-green mb-4">PortugalApostasDesportivas.com</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-portugal-green mb-4">PT Melhores Sites de Apostas</h2>
           <p className="text-lg text-gray-300 leading-relaxed">
             O seu guia de confiança para as melhores experiências de apostas desportivas em Portugal
           </p>
@@ -14,10 +14,9 @@ export default function AboutPage() {
 
         <PolicySection title="A Nossa Missão">
           <PolicyParagraph>
-            Na PortugalApostasDesportivas.com, a nossa missão é fornecer aos apostadores portugueses informações
-            precisas e atualizadas sobre os melhores sites de apostas desportivas disponíveis no mercado nacional.
-            Acreditamos na transparência, honestidade e no jogo responsável como pilares fundamentais da nossa
-            atividade.
+            Na PT Melhores Sites de Apostas, a nossa missão é fornecer aos apostadores portugueses informações precisas
+            e atualizadas sobre os melhores sites de apostas desportivas disponíveis no mercado nacional. Acreditamos na
+            transparência, honestidade e no jogo responsável como pilares fundamentais da nossa atividade.
           </PolicyParagraph>
           <PolicyParagraph>
             Somos uma equipa de especialistas portugueses apaixonados pelo desporto e pelas apostas, dedicados a ajudar
@@ -116,7 +115,7 @@ export default function AboutPage() {
 
         <PolicySection title="Divulgação de Afiliação" delay={1000}>
           <PolicyParagraph>
-            A PortugalApostasDesportivas.com é financiada através de parcerias de afiliação com operadores de apostas.
+            A PT Melhores Sites de Apostas é financiada através de parcerias de afiliação com operadores de apostas.
             Quando se regista através dos nossos links, podemos receber uma comissão. Isto ajuda-nos a manter o nosso
             site e continuar a fornecer informações gratuitas aos nossos utilizadores. No entanto, isto não influencia
             as nossas análises ou classificações. Priorizamos sempre a precisão e os interesses dos utilizadores.
@@ -146,8 +145,8 @@ export default function AboutPage() {
           <div className="bg-gradient-to-br from-gray-900 to-emerald-950/30 p-6 rounded-lg border border-emerald-900/50">
             <PolicyParagraph>
               Tem questões ou sugestões? Adoraríamos ouvir de si. Contacte a nossa equipa em{" "}
-              <a href="mailto:info@portugalapostasdesportivas.com" className="text-emerald-400 hover:underline">
-                info@portugalapostasdesportivas.com
+              <a href="mailto:info@ptmelhoressitesdeapostas.com" className="text-emerald-400 hover:underline">
+                info@ptmelhoressitesdeapostas.com
               </a>
             </PolicyParagraph>
             <p className="text-gray-300 mt-4">Resposta garantida em 24 horas</p>

@@ -54,43 +54,38 @@ export function Footer() {
                   <Image src="/srij-new.svg" alt="SRIJ" fill className="object-contain" />
                 </div>
               </Link>
-              <span className="text-[8px] md:text-xs text-center text-mercedes-silver">Regulação Jogos</span>
             </div>
 
-            <div className="bg-mercedes-dark-grey p-2 md:p-3 rounded-lg flex flex-col items-center border border-mercedes-teal/30">
+            <div className="bg-amber-50 p-2 md:p-3 rounded-lg flex flex-col items-center border border-mercedes-teal/30">
               <Link href="https://www.sicad.pt/" target="_blank" rel="noopener noreferrer">
                 <div className="relative w-[60px] h-[24px] md:w-[80px] md:h-[32px] mb-1 md:mb-2">
                   <Image src="/icad.png" alt="ICAD" fill className="object-contain" />
                 </div>
               </Link>
-              <span className="text-[8px] md:text-xs text-center text-mercedes-silver">Comportamentos Aditivos</span>
             </div>
 
-            <div className="bg-mercedes-dark-grey p-2 md:p-3 rounded-lg flex flex-col items-center border border-mercedes-teal/30">
+            <div className=" p-2 md:p-3 rounded-lg flex flex-col items-center border border-mercedes-teal/30 bg-amber-50">
               <Link href="https://www.gamcare.org.uk/" target="_blank" rel="noopener noreferrer">
-                <div className="relative w-[60px] h-[24px] md:w-[80px] md:h-[32px] mb-1 md:mb-2">
-                  <Image src="/gamecare-new.svg" alt="GamCare" fill className="object-contain" />
+                <div className="relative w-[60px] h-[24px] md:w-[80px] md:h-[32px] mb-1 md:mb-2 ">
+                  <Image src="/gamecare-new.svg" alt="GamCare" fill className="object-contain " />
                 </div>
               </Link>
-              <span className="text-[8px] md:text-xs text-center text-mercedes-silver">Apoio Confidencial</span>
             </div>
 
-            <div className="bg-mercedes-dark-grey p-2 md:p-3 rounded-lg flex flex-col items-center border border-mercedes-teal/30">
+            <div className="bg-amber-50 p-2 md:p-3 rounded-lg flex flex-col items-center border border-mercedes-teal/30">
               <Link href="https://www.gambleaware.org/" target="_blank" rel="noopener noreferrer">
                 <div className="relative w-[60px] h-[24px] md:w-[80px] md:h-[32px] mb-1 md:mb-2">
                   <Image src="/gamble-aware.webp" alt="GambleAware" fill className="object-contain" />
                 </div>
               </Link>
-              <span className="text-[8px] md:text-xs text-center text-mercedes-silver">Consciencialização</span>
             </div>
 
             <div className="bg-mercedes-dark-grey p-2 md:p-3 rounded-lg flex flex-col items-center border border-mercedes-teal/30">
               <Link href="https://www.jogoresponsavel.pt/" target="_blank" rel="noopener noreferrer">
-                <div className="relative w-[60px] h-[24px] md:w-[80px] md:h-[32px] mb-1 md:mb-2">
+                <div className="relative w-[80px] h-[24px] md:w-[120px] md:h-[32px] mb-1 md:mb-2">
                   <Image src="/jogo-responsavel-new.png" alt="Jogo Responsável" fill className="object-contain" />
                 </div>
               </Link>
-              <span className="text-[8px] md:text-xs text-center text-mercedes-silver">Jogo Responsável PT</span>
             </div>
           </div>
         </div>

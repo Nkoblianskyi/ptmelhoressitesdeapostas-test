@@ -26,7 +26,7 @@ export function AdvertiserInfoModal({ isOpen, onClose }: AdvertiserInfoModalProp
             <h3 className="font-semibold text-sm md:text-base mb-1.5">Informação Publicitária</h3>
             <div className="space-y-1.5">
               <p className="text-xs md:text-sm text-gray-700">
-                PortugalApostasDesportivas.com é um serviço gratuito para ajudá-lo a encontrar plataformas de apostas.
+                PT Melhores Sites de Apostas é um serviço gratuito para ajudá-lo a encontrar plataformas de apostas.
                 Recebemos taxas de marcas em destaque, afetando a sua colocação.
               </p>
               <p className="text-xs md:text-sm text-gray-700">

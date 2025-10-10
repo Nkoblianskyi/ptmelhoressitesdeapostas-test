@@ -19,9 +19,7 @@ export default function CookiePolicyPage() {
       </PolicySection>
 
       <PolicySection title="Como Usamos Cookies" delay={100}>
-        <PolicyParagraph>
-          O portugalapostasdesportivas.com usa cookies por várias razões, incluindo para:
-        </PolicyParagraph>
+        <PolicyParagraph>O ptmelhoressitesdeapostas.com usa cookies por várias razões, incluindo para:</PolicyParagraph>
         <PolicyList
           items={[
             "Fazer o nosso website funcionar como esperaria",
@@ -111,8 +109,7 @@ export default function CookiePolicyPage() {
 
       <PolicySection title="Contacte-nos" delay={600}>
         <PolicyParagraph>
-          Se tiver questões sobre a nossa Política de Cookies, contacte-nos em:
-          privacidade@portugalapostasdesportivas.com
+          Se tiver questões sobre a nossa Política de Cookies, contacte-nos em: privacidade@ptmelhoressitesdeapostas.com
         </PolicyParagraph>
       </PolicySection>
     </PolicyPageLayout>
