@@ -6,19 +6,19 @@ export function Footer() {
   return (
     <footer className="bg-mercedes-black text-white py-8 md:py-12 border-t-2 border-mercedes-teal/40">
       <div className="container mx-auto px-4 max-w-[1280px]">
-        <div className="flex flex-col md:flex-row gap-6 md:gap-12 mb-8 md:mb-12">
-          <div className="md:w-1/3">
-            <div className="flex flex-row gap-2 items-center">
+        <div className="flex flex-col justify-around md:flex-row gap-6 md:gap-12 mb-8 md:mb-12">
+          <div className="">
+            <div className="flex flex-row justify-start gap-2 items-center">
               <Logo className="mb-4" size="lg" />
-              <p> Pt Melhores Sites de Apostas</p>
+              <p className="text-2xl font-semibold mb-2"> Pt Melhores Sites de Apostas</p>
             </div>
-            <p className="text-mercedes-light-grey text-xs md:text-sm">
+            <p className="text-mercedes-light-grey text-xs md:text-sm mb-4">
               PortugalApostasDesportivas.com fornece comparações independentes de plataformas de apostas desportivas.
               Podemos receber comissões de marcas em destaque, o que pode influenciar as classificações.
             </p>
           </div>
 
-          <div className="md:w-1/4">
+          <div className="md:w-1/2">
             <h3 className="text-lg font-semibold mb-3 md:mb-4">Links Rápidos</h3>
             <ul className="space-y-2 text-mercedes-light-grey text-sm">
               <li>
@@ -34,11 +34,6 @@ export function Footer() {
               <li>
                 <Link href="/cookie-policy" className="hover:text-mercedes-teal transition-colors">
                   Política de Cookies
-                </Link>
-              </li>
-              <li>
-                <Link href="/responsible-gambling" className="hover:text-mercedes-teal transition-colors">
-                  Jogo Responsável
                 </Link>
               </li>
             </ul>
