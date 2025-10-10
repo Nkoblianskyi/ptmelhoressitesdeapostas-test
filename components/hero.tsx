@@ -19,13 +19,11 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden min-h-[280px] md:min-h-0 md:max-h-[350px] pt-14 md:pt-18 max-w-[1400px] mx-auto">
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-[url('/9ad6027798a71e0521b81d5da2081df9.jpg')] bg-cover bg-center" />
+        <div className="absolute inset-0 bg-[url('/bg-2.jpg')] bg-cover bg-center" />
         <div className="absolute inset-0 bg-black/60 md:bg-white/90" />
       </div>
 
-      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-mclaren-orange to-transparent" />
-
-      <div className="container mx-auto sm:max-w-[1280px] relative z-10 px-2 sm:px-4">
+      <div className="container mx-auto sm:max-w-[1280px] relative z-10 ">
         <div className="relative">
           <div className="bg-transparent md:bg-white rounded-lg sm:rounded-xl p-3 sm:p-4 md:p-5 md:border md:border-mclaren-orange/30 md:shadow-2xl">
             <div className="text-center mb-2 sm:mb-3">
@@ -53,17 +51,17 @@ export function Hero() {
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-1.5 sm:gap-2 mb-2 sm:mb-3">
-              <div className="bg-white/90 md:bg-white border border-mclaren-orange/30 rounded p-1.5 sm:p-2 text-center hover:border-mclaren-orange hover:bg-orange-50/50 transition-colors">
+              <div className="md:bg-white/90 border border-mclaren-orange rounded p-1.5 sm:p-2 text-center hover:border-mclaren-orange hover:bg-orange-50/50 transition-colors">
                 <Image src="/flag.png" alt="Legal" width={20} height={20} className="mx-auto mb-0.5 sm:mb-1" />
-                <p className="text-[9px] sm:text-[10px] md:text-xs font-bold text-gray-900">100% Legal</p>
+                <p className="text-[9px] sm:text-[10px] md:text-xs font-bold text-white md:text-gray-900">100% Legal</p>
                 <p className="text-[7px] sm:text-[8px] md:text-[9px] text-gray-600 mt-0.5 hidden sm:block">
                   Licenciado
                 </p>
               </div>
 
-              <div className="bg-white/90 md:bg-white border border-mclaren-orange/30 rounded p-1.5 sm:p-2 text-center hover:border-mclaren-orange hover:bg-orange-50/50 transition-colors">
+              <div className="md:bg-white/90 border border-mclaren-orange rounded p-1.5 sm:p-2 text-center hover:border-mclaren-orange hover:bg-orange-50/50 transition-colors">
                 <Award className="w-4 h-4 sm:w-5 sm:h-5 mx-auto mb-0.5 sm:mb-1 text-mclaren-orange" />
-                <p className="text-[9px] sm:text-[10px] md:text-xs font-bold text-gray-900">Bónus Fáceis</p>
+                <p className="text-[9px] sm:text-[10px] md:text-xs font-bold text-white md:text-gray-900">Bónus Fáceis</p>
                 <p className="text-[7px] sm:text-[8px] md:text-[9px] text-gray-600 mt-0.5 hidden sm:block">Simples</p>
               </div>
 
