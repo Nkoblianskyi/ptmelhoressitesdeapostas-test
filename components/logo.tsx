@@ -7,7 +7,7 @@ interface LogoProps {
 }
 
 export function Logo({ className = "", size = "md" }: LogoProps) {
-  const imageSize = size === "sm" ? 36 : size === "lg" ? 56 : 48
+  const imageSize = size === "sm" ? 48 : size === "lg" ? 56 : 48
 
   return (
     <Link href="/" className={`flex items-center hover:opacity-90 ${className}`}>
