@@ -4,84 +4,92 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: oklch(0.12 0 0);
-  --foreground: oklch(0.98 0 0);
-  --card: oklch(0.15 0 0);
-  --card-foreground: oklch(0.98 0 0);
-  --popover: oklch(0.15 0 0);
-  --popover-foreground: oklch(0.98 0 0);
-  --primary: oklch(62.121% 0.14718 250.441);
-  --primary-foreground: oklch(0.05 0 0);
-  --secondary: oklch(0.75 0.02 240);
-  --secondary-foreground: oklch(0.05 0 0);
-  --muted: oklch(0.25 0 0);
-  --muted-foreground: oklch(0.65 0 0);
-  --accent: oklch(62.121% 0.14718 250.441);
-  --accent-foreground: oklch(0.05 0 0);
+  /* Light, sunny Portuguese backgrounds instead of dark */
+  --background: oklch(0.98 0.01 55);
+  --foreground: oklch(0.15 0.02 40);
+  --card: oklch(0.96 0.01 55);
+  --card-foreground: oklch(0.15 0.02 40);
+  --popover: oklch(0.98 0.01 55);
+  --popover-foreground: oklch(0.15 0.02 40);
+  --primary: oklch(0.7 0.18 55);
+  --primary-foreground: oklch(0.98 0.01 60);
+  --secondary: oklch(0.92 0.03 50);
+  --secondary-foreground: oklch(0.15 0.02 40);
+  --muted: oklch(0.94 0.02 50);
+  --muted-foreground: oklch(0.4 0.03 45);
+  --accent: oklch(0.7 0.18 55);
+  --accent-foreground: oklch(0.98 0.01 60);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.25 0 0);
-  --input: oklch(0.25 0 0);
-  --ring: oklch(62.121% 0.14718 250.441);
-  --chart-1: oklch(62.121% 0.14718 250.441);
-  --chart-2: oklch(0.75 0.02 240);
-  --chart-3: oklch(0.45 0.05 240);
-  --chart-4: oklch(62.121% 0.14718 250.441);
-  --chart-5: oklch(0.35 0.05 240);
+  --border: oklch(0.88 0.02 50);
+  --input: oklch(0.96 0.01 55);
+  --ring: oklch(0.7 0.18 55);
+  --chart-1: oklch(0.7 0.18 55);
+  --chart-2: oklch(0.75 0.12 35);
+  --chart-3: oklch(0.65 0.15 25);
+  --chart-4: oklch(0.6 0.12 220);
+  --chart-5: oklch(0.55 0.1 150);
   --radius: 0.5rem;
-  --sidebar: oklch(0.15 0 0);
-  --sidebar-foreground: oklch(0.98 0 0);
-  --sidebar-primary: oklch(62.121% 0.14718 250.441);
-  --sidebar-primary-foreground: oklch(0.05 0 0);
-  --sidebar-accent: oklch(0.25 0 0);
-  --sidebar-accent-foreground: oklch(0.98 0 0);
-  --sidebar-border: oklch(0.25 0 0);
-  --sidebar-ring: oklch(62.121% 0.14718 250.441);
+  --sidebar: oklch(0.96 0.01 55);
+  --sidebar-foreground: oklch(0.15 0.02 40);
+  --sidebar-primary: oklch(0.7 0.18 55);
+  --sidebar-primary-foreground: oklch(0.98 0.01 60);
+  --sidebar-accent: oklch(0.94 0.02 50);
+  --sidebar-accent-foreground: oklch(0.15 0.02 40);
+  --sidebar-border: oklch(0.88 0.02 50);
+  --sidebar-ring: oklch(0.7 0.18 55);
 
-  /* Mercedes F1 Colors - Petronas Teal, Silver, Black */
-  --mercedes-teal: oklch(62.121% 0.14718 250.441);
-  --mercedes-teal-dark: oklch(0.45 0.12 195);
-  --mercedes-teal-light: oklch(62.121% 0.14718 250.441);
-  --mercedes-silver: oklch(0.75 0.02 240);
-  --mercedes-silver-dark: oklch(0.55 0.02 240);
-  --mercedes-black: oklch(0.12 0 0);
-  --mercedes-dark-grey: oklch(0.2 0 0);
-  --mercedes-light-grey: oklch(0.45 0 0);
+  /* Portuguese Sunny Sports Colors - Golden Sun, Warm Orange, Ocean Blue */
+  --portugal-gold: oklch(0.75 0.18 55);
+  --portugal-gold-dark: oklch(0.55 0.15 50);
+  --portugal-gold-light: oklch(0.85 0.15 60);
+  --portugal-orange: oklch(0.7 0.2 40);
+  --portugal-orange-dark: oklch(0.5 0.18 35);
+  --portugal-red: oklch(0.55 0.22 25);
+  --portugal-ocean: oklch(0.6 0.15 230);
+  --portugal-ocean-dark: oklch(0.4 0.12 220);
+  --portugal-green: oklch(0.55 0.15 150);
+  --portugal-sand: oklch(0.92 0.04 55);
+  --portugal-terracotta: oklch(0.5 0.15 35);
+  --portugal-warm-dark: oklch(0.15 0.02 40);
+  --portugal-warm-grey: oklch(0.45 0.03 45);
+  --portugal-light-cream: oklch(0.97 0.02 60);
 }
 
 .dark {
-  --background: oklch(0.12 0 0);
-  --foreground: oklch(0.98 0 0);
-  --card: oklch(0.15 0 0);
-  --card-foreground: oklch(0.98 0 0);
-  --popover: oklch(0.15 0 0);
-  --popover-foreground: oklch(0.98 0 0);
-  --primary: oklch(62.121% 0.14718 250.441);
-  --primary-foreground: oklch(0.05 0 0);
-  --secondary: oklch(0.75 0.02 240);
-  --secondary-foreground: oklch(0.05 0 0);
-  --muted: oklch(0.25 0 0);
-  --muted-foreground: oklch(0.65 0 0);
-  --accent: oklch(0.65 0.15 195);
-  --accent-foreground: oklch(0.05 0 0);
+  /* Dark mode with warm Portuguese tones */
+  --background: oklch(0.15 0.02 40);
+  --foreground: oklch(0.98 0.01 60);
+  --card: oklch(0.18 0.03 45);
+  --card-foreground: oklch(0.98 0.01 60);
+  --popover: oklch(0.18 0.03 45);
+  --popover-foreground: oklch(0.98 0.01 60);
+  --primary: oklch(0.7 0.18 55);
+  --primary-foreground: oklch(0.1 0.02 40);
+  --secondary: oklch(0.75 0.12 35);
+  --secondary-foreground: oklch(0.1 0.02 40);
+  --muted: oklch(0.3 0.03 45);
+  --muted-foreground: oklch(0.7 0.05 50);
+  --accent: oklch(0.7 0.18 55);
+  --accent-foreground: oklch(0.1 0.02 40);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.25 0 0);
-  --input: oklch(0.25 0 0);
-  --ring: oklch(62.121% 0.14718 250.441);
-  --chart-1: oklch(62.121% 0.14718 250.441);
-  --chart-2: oklch(0.75 0.02 240);
-  --chart-3: oklch(0.45 0.05 240);
-  --chart-4: oklch(0.55 0.1 195);
-  --chart-5: oklch(0.35 0.05 240);
-  --sidebar: oklch(0.15 0 0);
-  --sidebar-foreground: oklch(0.98 0 0);
-  --sidebar-primary: oklch(62.121% 0.14718 250.441);
-  --sidebar-primary-foreground: oklch(0.05 0 0);
-  --sidebar-accent: oklch(0.25 0 0);
-  --sidebar-accent-foreground: oklch(0.98 0 0);
-  --sidebar-border: oklch(0.25 0 0);
-  --sidebar-ring: oklch(62.121% 0.14718 250.441);
+  --border: oklch(0.3 0.03 45);
+  --input: oklch(0.3 0.03 45);
+  --ring: oklch(0.7 0.18 55);
+  --chart-1: oklch(0.7 0.18 55);
+  --chart-2: oklch(0.75 0.12 35);
+  --chart-3: oklch(0.65 0.15 25);
+  --chart-4: oklch(0.6 0.12 220);
+  --chart-5: oklch(0.55 0.1 150);
+  --sidebar: oklch(0.18 0.03 45);
+  --sidebar-foreground: oklch(0.98 0.01 60);
+  --sidebar-primary: oklch(0.7 0.18 55);
+  --sidebar-primary-foreground: oklch(0.1 0.02 40);
+  --sidebar-accent: oklch(0.3 0.03 45);
+  --sidebar-accent-foreground: oklch(0.98 0.01 60);
+  --sidebar-border: oklch(0.3 0.03 45);
+  --sidebar-ring: oklch(0.7 0.18 55);
 }
 
 @theme inline {
@@ -122,15 +130,21 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
-  /* Mercedes F1 color mappings */
-  --color-mercedes-teal: var(--mercedes-teal);
-  --color-mercedes-teal-dark: var(--mercedes-teal-dark);
-  --color-mercedes-teal-light: var(--mercedes-teal-light);
-  --color-mercedes-silver: var(--mercedes-silver);
-  --color-mercedes-silver-dark: var(--mercedes-silver-dark);
-  --color-mercedes-black: var(--mercedes-black);
-  --color-mercedes-dark-grey: var(--mercedes-dark-grey);
-  --color-mercedes-light-grey: var(--mercedes-light-grey);
+  /* Portuguese sunny sports color mappings */
+  --color-portugal-gold: var(--portugal-gold);
+  --color-portugal-gold-dark: var(--portugal-gold-dark);
+  --color-portugal-gold-light: var(--portugal-gold-light);
+  --color-portugal-orange: var(--portugal-orange);
+  --color-portugal-orange-dark: var(--portugal-orange-dark);
+  --color-portugal-red: var(--portugal-red);
+  --color-portugal-ocean: var(--portugal-ocean);
+  --color-portugal-ocean-dark: var(--portugal-ocean-dark);
+  --color-portugal-green: var(--portugal-green);
+  --color-portugal-sand: var(--portugal-sand);
+  --color-portugal-terracotta: var(--portugal-terracotta);
+  --color-portugal-warm-dark: var(--portugal-warm-dark);
+  --color-portugal-warm-grey: var(--portugal-warm-grey);
+  --color-portugal-light-cream: var(--portugal-light-cream);
 }
 
 @layer base {
@@ -142,91 +156,159 @@
   }
 }
 
-/* Mercedes F1 Color Utilities */
-.bg-mercedes-teal {
-  background-color: var(--mercedes-teal);
+/* Portuguese Sunny Sports Color Utilities */
+.bg-portugal-gold {
+  background-color: var(--portugal-gold);
 }
 
-.bg-mercedes-teal-dark {
-  background-color: var(--mercedes-teal-dark);
+.bg-portugal-gold-dark {
+  background-color: var(--portugal-gold-dark);
 }
 
-.bg-mercedes-teal-light {
-  background-color: var(--mercedes-teal-light);
+.bg-portugal-gold-light {
+  background-color: var(--portugal-gold-light);
 }
 
-.bg-mercedes-silver {
-  background-color: var(--mercedes-silver);
+.bg-portugal-orange {
+  background-color: var(--portugal-orange);
 }
 
-.bg-mercedes-silver-dark {
-  background-color: var(--mercedes-silver-dark);
+.bg-portugal-orange-dark {
+  background-color: var(--portugal-orange-dark);
 }
 
-.bg-mercedes-black {
-  background-color: var(--mercedes-black);
+.bg-portugal-red {
+  background-color: var(--portugal-red);
 }
 
-.bg-mercedes-dark-grey {
-  background-color: var(--mercedes-dark-grey);
+.bg-portugal-ocean {
+  background-color: var(--portugal-ocean);
 }
 
-.bg-mercedes-light-grey {
-  background-color: var(--mercedes-light-grey);
+.bg-portugal-ocean-dark {
+  background-color: var(--portugal-ocean-dark);
 }
 
-.text-mercedes-teal {
-  color: var(--mercedes-teal);
+.bg-portugal-green {
+  background-color: var(--portugal-green);
 }
 
-.text-mercedes-teal-dark {
-  color: var(--mercedes-teal-dark);
+.bg-portugal-sand {
+  background-color: var(--portugal-sand);
 }
 
-.text-mercedes-teal-light {
-  color: var(--mercedes-teal-light);
+.bg-portugal-terracotta {
+  background-color: var(--portugal-terracotta);
 }
 
-.text-mercedes-silver {
-  color: var(--mercedes-silver);
+.bg-portugal-warm-dark {
+  background-color: var(--portugal-warm-dark);
 }
 
-.text-mercedes-silver-dark {
-  color: var(--mercedes-silver-dark);
+.bg-portugal-warm-grey {
+  background-color: var(--portugal-warm-grey);
 }
 
-.text-mercedes-light-grey {
-  color: var(--mercedes-light-grey);
+.bg-portugal-light-cream {
+  background-color: var(--portugal-light-cream);
 }
 
-.border-mercedes-teal {
-  border-color: var(--mercedes-teal);
+.text-portugal-gold {
+  color: var(--portugal-gold);
 }
 
-.border-mercedes-teal-dark {
-  border-color: var(--mercedes-teal-dark);
+.text-portugal-gold-dark {
+  color: var(--portugal-gold-dark);
 }
 
-.border-mercedes-silver {
-  border-color: var(--mercedes-silver);
+.text-portugal-gold-light {
+  color: var(--portugal-gold-light);
 }
 
-.hover\:bg-mercedes-teal:hover {
-  background-color: var(--mercedes-teal);
+.text-portugal-orange {
+  color: var(--portugal-orange);
 }
 
-.hover\:bg-mercedes-teal-dark:hover {
-  background-color: var(--mercedes-teal-dark);
+.text-portugal-orange-dark {
+  color: var(--portugal-orange-dark);
 }
 
-.hover\:text-mercedes-teal:hover {
-  color: var(--mercedes-teal);
+.text-portugal-red {
+  color: var(--portugal-red);
 }
 
-.hover\:text-mercedes-teal-light:hover {
-  color: var(--mercedes-teal-light);
+.text-portugal-ocean {
+  color: var(--portugal-ocean);
 }
 
-.hover\:border-mercedes-teal:hover {
-  border-color: var(--mercedes-teal);
+.text-portugal-ocean-dark {
+  color: var(--portugal-ocean-dark);
+}
+
+.text-portugal-green {
+  color: var(--portugal-green);
+}
+
+.text-portugal-sand {
+  color: var(--portugal-sand);
+}
+
+.text-portugal-warm-grey {
+  color: var(--portugal-warm-grey);
+}
+
+.border-portugal-gold {
+  border-color: var(--portugal-gold);
+}
+
+.border-portugal-gold-dark {
+  border-color: var(--portugal-gold-dark);
+}
+
+.border-portugal-orange {
+  border-color: var(--portugal-orange);
+}
+
+.border-portugal-red {
+  border-color: var(--portugal-red);
+}
+
+.border-portugal-ocean {
+  border-color: var(--portugal-ocean);
+}
+
+.border-portugal-green {
+  border-color: var(--portugal-green);
+}
+
+.hover\:bg-portugal-gold:hover {
+  background-color: var(--portugal-gold);
+}
+
+.hover\:bg-portugal-gold-dark:hover {
+  background-color: var(--portugal-gold-dark);
+}
+
+.hover\:bg-portugal-orange:hover {
+  background-color: var(--portugal-orange);
+}
+
+.hover\:text-portugal-gold:hover {
+  color: var(--portugal-gold);
+}
+
+.hover\:text-portugal-gold-light:hover {
+  color: var(--portugal-gold-light);
+}
+
+.hover\:text-portugal-orange:hover {
+  color: var(--portugal-orange);
+}
+
+.hover\:border-portugal-gold:hover {
+  border-color: var(--portugal-gold);
+}
+
+.hover\:border-portugal-orange:hover {
+  border-color: var(--portugal-orange);
 }

@@ -41,31 +41,31 @@ export function RatingList({ sites }: RatingListProps) {
         <div className="grid gap-2">
           {sites.map((site, index) => {
             const isFirstPlace = index === 0
-            const showBadge = index < 4 && site.badges.length > 0
-            const borderColor = isFirstPlace ? "border-green-500" : "border-mercedes-teal/40"
-            const accentColor = isFirstPlace ? "green-500" : "mercedes-teal"
-            const shadowColor = isFirstPlace ? "shadow-green-500/30" : "shadow-mercedes-teal/20"
+            const showBadge = index < 3 && site.badges.length > 0
+            const borderColor = isFirstPlace ? "border-green-500" : "border-portugal-gold/40"
+            const accentColor = isFirstPlace ? "green-500" : "portugal-gold"
+            const shadowColor = isFirstPlace ? "shadow-green-500/30" : "shadow-portugal-gold/20"
 
             return (
               <div
                 key={site.id}
                 className={`relative overflow-hidden group ${
                   isFirstPlace
-                    ? `bg-gradient-to-br from-mercedes-black via-mercedes-dark-grey/80 to-mercedes-black border-l-4 border-r-4 ${borderColor} shadow-2xl ${shadowColor} rounded-xl`
-                    : `bg-gradient-to-r from-mercedes-dark-grey/90 via-mercedes-black to-mercedes-dark-grey/90 border-l-2 border-r-2 ${borderColor} rounded-lg shadow-lg hover:${shadowColor} transition-all duration-300`
+                    ? `bg-gradient-to-br from-green-50 via-white to-green-50/80 border-l-4 border-r-4 ${borderColor} shadow-2xl ${shadowColor} rounded-xl`
+                    : `bg-gradient-to-r from-orange-50/60 via-white to-amber-50/60 border-l-2 border-r-2 ${borderColor} rounded-lg shadow-lg hover:${shadowColor} transition-all duration-300`
                 }`}
               >
                 <div className="absolute inset-0 opacity-5">
-                  <div className="absolute inset-0 bg-gradient-to-br from-transparent via-mercedes-teal/10 to-transparent transform -skew-x-12"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-transparent via-portugal-gold/10 to-transparent transform -skew-x-12"></div>
                 </div>
 
                 {showBadge && (
                   <div className="absolute top-0 left-0 z-10">
                     <div className="relative">
-                      <div className="bg-green-500 text-mercedes-black text-xs font-black px-4 py-2 uppercase tracking-wider shadow-xl clip-path-badge">
+                      <div className="bg-portugal-gold text-black text-xs font-black px-4 py-2 uppercase tracking-wider shadow-xl clip-path-badge">
                         {site.badges[0]}
                       </div>
-                    
+                      <div className="absolute -bottom-1 left-0 w-0 h-0 border-l-[20px] border-l-transparent border-t-[8px] border-t-portugal-gold/80"></div>
                     </div>
                   </div>
                 )}
@@ -76,7 +76,7 @@ export function RatingList({ sites }: RatingListProps) {
                     <div className="grid grid-cols-[280px_1fr_240px_200px] items-center gap-0 p-6 relative">
                       <div className="relative">
                         <div
-                          className={`flex items-center justify-center bg-gradient-to-br from-mercedes-black to-mercedes-dark-grey rounded-lg p-6 h-[140px] border-2 border-${accentColor}/30 relative overflow-hidden group-hover:border-${accentColor}/50 transition-colors`}
+                          className={`flex items-center justify-center bg-gradient-to-br from-white to-gray-50 rounded-lg p-6 h-[140px] border-2 border-${accentColor}/30 relative overflow-hidden group-hover:border-${accentColor}/50 transition-colors`}
                         >
                           <div
                             className={`absolute top-0 right-0 w-12 h-12 bg-${accentColor}/20 transform rotate-45 translate-x-6 -translate-y-6`}
@@ -99,9 +99,7 @@ export function RatingList({ sites }: RatingListProps) {
                         <p className={`text-${accentColor} text-xs font-black mb-2 uppercase tracking-widest`}>
                           BÓNUS BOAS-VINDAS
                         </p>
-                        <h3 className="text-white text-2xl font-black leading-tight bg-gradient-to-r from-white via-mercedes-silver to-white bg-clip-text">
-                          {site.bonus}
-                        </h3>
+                        <h3 className="text-gray-900 text-2xl font-black leading-tight">{site.bonus}</h3>
                       </div>
 
                       <div className="flex flex-col items-center justify-center text-center px-6 relative">
@@ -112,13 +110,13 @@ export function RatingList({ sites }: RatingListProps) {
                           PONTUAÇÃO
                         </p>
                         <div className="relative">
-                          <div className="text-white text-5xl font-black mb-2 drop-shadow-[0_0_10px_rgba(0,210,190,0.3)]">
+                          <div className="text-gray-900 text-5xl font-black mb-2 drop-shadow-[0_0_10px_rgba(234,179,8,0.3)]">
                             {site.rating.toFixed(1)}
                           </div>
                           <div className={`absolute -inset-2 bg-${accentColor}/10 blur-xl -z-10 rounded-full`}></div>
                         </div>
                         <div className="flex items-center justify-center gap-1 mb-1">{renderStars(site.rating)}</div>
-                        <p className="text-mercedes-light-grey text-xs font-semibold">
+                        <p className="text-gray-600 text-xs font-semibold">
                           ({site.reviews.toLocaleString()} avaliações)
                         </p>
                       </div>
@@ -128,12 +126,12 @@ export function RatingList({ sites }: RatingListProps) {
                           className={`absolute left-0 top-1/2 -translate-y-1/2 w-px h-20 bg-gradient-to-b from-transparent via-${accentColor}/50 to-transparent`}
                         ></div>
                         <button
-                          className={`w-full bg-gradient-to-r ${isFirstPlace ? "from-green-500 via-green-400 to-green-500 hover:from-green-400 hover:to-green-500" : "from-mercedes-teal via-mercedes-teal-light to-mercedes-teal hover:from-mercedes-teal-light hover:to-mercedes-teal"} transition-all duration-300 text-white font-black py-4 px-8 rounded-lg text-center uppercase tracking-wider transform hover:scale-105`}
+                          className={`w-full bg-gradient-to-r ${isFirstPlace ? "from-green-500 via-green-400 to-green-500 hover:from-green-400 hover:to-green-500" : "from-portugal-gold via-portugal-orange to-portugal-gold hover:from-portugal-orange hover:to-portugal-gold"} transition-all duration-300 text-white font-black py-4 px-8 rounded-lg text-center uppercase tracking-wider transform hover:scale-105`}
                         >
                           Registar
                         </button>
                         <p
-                          className={`text-${accentColor} font-bold text-sm hover:text-${accentColor === "green-500" ? "green-600" : "mercedes-teal-light"} transition-colors cursor-pointer uppercase tracking-wide`}
+                          className={`text-${accentColor} font-bold text-sm hover:text-${accentColor === "green-500" ? "green-600" : "portugal-orange"} transition-colors cursor-pointer uppercase tracking-wide`}
                         >
                           Visitar Site
                         </p>
@@ -142,12 +140,12 @@ export function RatingList({ sites }: RatingListProps) {
                   </Link>
 
                   <div
-                    className={`relative border-t-2 border-${accentColor}/20 px-6 py-3 bg-gradient-to-r from-mercedes-black/80 via-mercedes-dark-grey/40 to-mercedes-black/80`}
+                    className={`relative border-t-2 border-${accentColor}/20 px-6 py-3 bg-gradient-to-r from-gray-50/80 via-white/40 to-gray-50/80`}
                   >
                     <div
                       className={`absolute top-0 left-0 w-32 h-0.5 bg-gradient-to-r from-${accentColor} to-transparent`}
                     ></div>
-                    <p className="text-mercedes-light-grey text-xs leading-relaxed text-center">{site.terms}</p>
+                    <p className="text-gray-600 text-xs leading-relaxed text-center">{site.terms}</p>
                   </div>
                 </div>
 
@@ -157,7 +155,7 @@ export function RatingList({ sites }: RatingListProps) {
                     <div className="grid grid-cols-2 gap-3 items-center mb-4">
                       <div className="flex justify-start mt-4">
                         <div
-                          className={`p-4 relative rounded-lg bg-gradient-to-br from-mercedes-black to-mercedes-dark-grey border-2 border-${accentColor}/30 w-full overflow-hidden`}
+                          className={`p-4 relative rounded-lg bg-gradient-to-br from-white to-gray-50 border-2 border-${accentColor}/30 w-full overflow-hidden`}
                         >
                           <div
                             className={`absolute top-0 right-0 w-8 h-8 bg-${accentColor}/20 transform rotate-45 translate-x-4 -translate-y-4`}
@@ -177,7 +175,7 @@ export function RatingList({ sites }: RatingListProps) {
                         <div className={`text-xs text-${accentColor} uppercase font-black mb-1 tracking-wider`}>
                           BÓNUS
                         </div>
-                        <div className="text-2xl font-black text-white leading-tight">{site.bonus}</div>
+                        <div className="text-2xl font-black text-gray-900 leading-tight">{site.bonus}</div>
                       </div>
                     </div>
 
@@ -188,10 +186,10 @@ export function RatingList({ sites }: RatingListProps) {
                       <div className="grid grid-cols-3 items-center gap-2">
                         <div className="text-center mt-2">
                           <div className="flex justify-center gap-0.5 mb-1">{renderStars(site.rating)}</div>
-                          <div className="text-[10px] text-mercedes-light-grey font-bold">({site.reviews})</div>
+                          <div className="text-[10px] text-gray-600 font-bold">({site.reviews})</div>
                         </div>
                         <div className="text-center">
-                          <div className="text-2xl font-black text-white leading-none mb-2 drop-shadow-[0_0_8px_rgba(0,210,190,0.3)]">
+                          <div className="text-2xl font-black text-gray-900 leading-none mb-2 drop-shadow-[0_0_8px_rgba(234,179,8,0.3)]">
                             {site.rating.toFixed(1)}
                           </div>
                           <div className={`text-[10px] text-${accentColor} font-black uppercase tracking-wider`}>
@@ -201,7 +199,7 @@ export function RatingList({ sites }: RatingListProps) {
 
                         <div className="flex justify-center">
                           <button
-                            className={`w-full bg-gradient-to-r ${isFirstPlace ? "from-green-500 to-green-400 hover:from-green-400 hover:to-green-500" : "from-mercedes-teal to-mercedes-teal-light hover:from-mercedes-teal-light hover:to-mercedes-teal"} transition-all text-white font-black py-4 px-4 rounded text-center text-xs uppercase`}
+                            className={`w-full bg-gradient-to-r ${isFirstPlace ? "from-green-500 to-green-400 hover:from-green-400 hover:to-green-500" : "from-portugal-gold to-portugal-orange hover:from-portugal-orange hover:to-portugal-gold"} transition-all text-white font-black py-4 px-4 rounded text-center text-xs uppercase`}
                           >
                             Registar
                           </button>
@@ -213,7 +211,7 @@ export function RatingList({ sites }: RatingListProps) {
                       <div
                         className={`absolute top-0 left-0 w-16 h-0.5 bg-gradient-to-r from-${accentColor} to-transparent`}
                       ></div>
-                      <p className="text-mercedes-light-grey text-[10px] leading-relaxed text-center">{site.terms}</p>
+                      <p className="text-gray-600 text-[10px] leading-relaxed text-center">{site.terms}</p>
                     </div>
                   </Link>
                 </div>
