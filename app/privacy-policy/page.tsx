@@ -1,134 +1,172 @@
-import { PolicyPageLayout } from "@/components/policy-page-layout"
-import { PolicySection, PolicyParagraph, PolicyList } from "@/components/policy-content"
+import { Header } from "@/components/header"
+import { Footer } from "@/components/footer"
 
 export default function PrivacyPolicyPage() {
   return (
-    <PolicyPageLayout
-      title="Política de Privacidade"
-      lastUpdated="27 de Janeiro de 2025"
-      heroImage="/new-stadium-background.jpg"
-      heroAlt="Privacidade digital"
-    >
-      <PolicySection title="Introdução">
-        <PolicyParagraph>
-          No ptmelhoressitesdeapostas.com, respeitamos a sua privacidade e estamos comprometidos em proteger os seus
-          dados pessoais. Esta política de privacidade informá-lo-á sobre como cuidamos dos seus dados pessoais quando
-          visita o nosso website e dir-lhe-á sobre os seus direitos de privacidade e como a lei o protege.
-        </PolicyParagraph>
-      </PolicySection>
+    <>
+      <Header />
 
-      <PolicySection title="Os Dados que Recolhemos Sobre Si" delay={100}>
-        <PolicyParagraph>
-          Podemos recolher, usar, armazenar e transferir diferentes tipos de dados pessoais sobre si, que agrupámos da
-          seguinte forma:
-        </PolicyParagraph>
-        <PolicyList
-          items={[
-            "Dados de Identidade incluem primeiro nome, apelido, nome de utilizador ou identificador similar.",
-            "Dados de Contacto incluem endereço de email e números de telefone.",
-            "Dados Técnicos incluem endereço de protocolo de internet (IP), os seus dados de login, tipo e versão do navegador, definição de fuso horário e localização, tipos e versões de plug-ins do navegador, sistema operativo e plataforma, e outras tecnologias nos dispositivos que usa para aceder a este website.",
-            "Dados de Uso incluem informações sobre como usa o nosso website, produtos e serviços.",
-            "Dados de Marketing e Comunicações incluem as suas preferências em receber marketing de nós e dos nossos terceiros e as suas preferências de comunicação.",
-          ]}
-        />
-      </PolicySection>
+      <div className="min-h-screen bg-gradient-to-b from-orange-50 via-white to-amber-50 pt-14 md:pt-18">
+        <div className="max-w-4xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Política de Privacidade</h1>
+            <p className="text-sm text-gray-600">Última atualização: 27 de Janeiro de 2025</p>
+          </div>
 
-      <PolicySection title="Como Usamos os Seus Dados Pessoais" delay={200}>
-        <PolicyParagraph>
-          Só usaremos os seus dados pessoais quando a lei nos permitir. Mais comummente, usaremos os seus dados pessoais
-          nas seguintes circunstâncias:
-        </PolicyParagraph>
-        <PolicyList
-          items={[
-            "Onde precisamos de executar o contrato que estamos prestes a celebrar ou celebrámos consigo.",
-            "Onde é necessário para os nossos interesses legítimos e os seus interesses e direitos fundamentais não se sobrepõem a esses interesses.",
-            "Onde precisamos de cumprir uma obrigação legal.",
-          ]}
-        />
-      </PolicySection>
+          <div className="space-y-10">
+            <section className="bg-white rounded-lg p-8 shadow-sm border border-orange-100">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Introdução</h2>
+              <p className="text-gray-700 leading-relaxed">
+                No ptmelhoressitesdeapostas.com, respeitamos a sua privacidade e estamos comprometidos em proteger os
+                seus dados pessoais. Esta política de privacidade informá-lo-á sobre como cuidamos dos seus dados
+                pessoais quando visita o nosso website e dir-lhe-á sobre os seus direitos de privacidade e como a lei o
+                protege.
+              </p>
+            </section>
 
-      <PolicySection title="Propósitos para os Quais Usaremos os Seus Dados Pessoais" delay={300}>
-        <PolicyParagraph>
-          Definimos abaixo uma descrição de todas as formas como planeamos usar os seus dados pessoais:
-        </PolicyParagraph>
-        <PolicyList
-          items={[
-            "Para o registar como um novo cliente",
-            "Para gerir a nossa relação consigo",
-            "Para permitir que participe num sorteio, competição ou complete um inquérito",
-            "Para administrar e proteger o nosso negócio e este website",
-            "Para entregar conteúdo relevante do website e anúncios para si",
-            "Para usar análise de dados para melhorar o nosso website, produtos/serviços, marketing, relações com clientes e experiências",
-          ]}
-        />
-      </PolicySection>
+            <section className="bg-white rounded-lg p-8 shadow-sm border border-orange-100">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Os Dados que Recolhemos Sobre Si</h2>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Podemos recolher, usar, armazenar e transferir diferentes tipos de dados pessoais sobre si, que
+                agrupámos da seguinte forma:
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-gray-700">
+                <li>
+                  Dados de Identidade incluem primeiro nome, apelido, nome de utilizador ou identificador similar.
+                </li>
+                <li>Dados de Contacto incluem endereço de email e números de telefone.</li>
+                <li>
+                  Dados Técnicos incluem endereço de protocolo de internet (IP), os seus dados de login, tipo e versão
+                  do navegador, definição de fuso horário e localização, tipos e versões de plug-ins do navegador,
+                  sistema operativo e plataforma, e outras tecnologias nos dispositivos que usa para aceder a este
+                  website.
+                </li>
+                <li>Dados de Uso incluem informações sobre como usa o nosso website, produtos e serviços.</li>
+                <li>
+                  Dados de Marketing e Comunicações incluem as suas preferências em receber marketing de nós e dos
+                  nossos terceiros e as suas preferências de comunicação.
+                </li>
+              </ul>
+            </section>
 
-      <PolicySection title="Cookies" delay={400}>
-        <PolicyParagraph>
-          Pode definir o seu navegador para recusar todos ou alguns cookies do navegador, ou para alertá-lo quando os
-          websites definem ou acedem a cookies. Se desativar ou recusar cookies, note que algumas partes deste website
-          podem tornar-se inacessíveis ou não funcionar adequadamente. Para mais informações sobre os cookies que
-          usamos, consulte a nossa Política de Cookies.
-        </PolicyParagraph>
-      </PolicySection>
+            <section className="bg-white rounded-lg p-8 shadow-sm border border-orange-100">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Como Usamos os Seus Dados Pessoais</h2>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Só usaremos os seus dados pessoais quando a lei nos permitir. Mais comummente, usaremos os seus dados
+                pessoais nas seguintes circunstâncias:
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-gray-700">
+                <li>Onde precisamos de executar o contrato que estamos prestes a celebrar ou celebrámos consigo.</li>
+                <li>
+                  Onde é necessário para os nossos interesses legítimos e os seus interesses e direitos fundamentais não
+                  se sobrepõem a esses interesses.
+                </li>
+                <li>Onde precisamos de cumprir uma obrigação legal.</li>
+              </ul>
+            </section>
 
-      <PolicySection title="Segurança de Dados" delay={500}>
-        <PolicyParagraph>
-          Implementámos medidas de segurança apropriadas para prevenir que os seus dados pessoais sejam acidentalmente
-          perdidos, usados ou acedidos de forma não autorizada, alterados ou divulgados. Além disso, limitamos o acesso
-          aos seus dados pessoais àqueles funcionários, agentes, contratados e outros terceiros que têm uma necessidade
-          comercial de saber.
-        </PolicyParagraph>
-      </PolicySection>
+            <section className="bg-white rounded-lg p-8 shadow-sm border border-orange-100">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                Propósitos para os Quais Usaremos os Seus Dados Pessoais
+              </h2>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Definimos abaixo uma descrição de todas as formas como planeamos usar os seus dados pessoais:
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-gray-700">
+                <li>Para o registar como um novo cliente</li>
+                <li>Para gerir a nossa relação consigo</li>
+                <li>Para permitir que participe num sorteio, competição ou complete um inquérito</li>
+                <li>Para administrar e proteger o nosso negócio e este website</li>
+                <li>Para entregar conteúdo relevante do website e anúncios para si</li>
+                <li>
+                  Para usar análise de dados para melhorar o nosso website, produtos/serviços, marketing, relações com
+                  clientes e experiências
+                </li>
+              </ul>
+            </section>
 
-      <PolicySection title="Retenção de Dados" delay={600}>
-        <PolicyParagraph>
-          Só reteremos os seus dados pessoais pelo tempo razoavelmente necessário para cumprir os propósitos para os
-          quais os recolhemos, incluindo para os propósitos de satisfazer quaisquer requisitos legais, regulamentares,
-          fiscais, contabilísticos ou de relatório.
-        </PolicyParagraph>
-      </PolicySection>
+            <section className="bg-white rounded-lg p-8 shadow-sm border border-orange-100">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Cookies</h2>
+              <p className="text-gray-700 leading-relaxed">
+                Pode definir o seu navegador para recusar todos ou alguns cookies do navegador, ou para alertá-lo quando
+                os websites definem ou acedem a cookies. Se desativar ou recusar cookies, note que algumas partes deste
+                website podem tornar-se inacessíveis ou não funcionar adequadamente. Para mais informações sobre os
+                cookies que usamos, consulte a nossa Política de Cookies.
+              </p>
+            </section>
 
-      <PolicySection title="Os Seus Direitos Legais" delay={700}>
-        <PolicyParagraph>
-          Sob certas circunstâncias, tem direitos sob as leis de proteção de dados em relação aos seus dados pessoais,
-          incluindo o direito de:
-        </PolicyParagraph>
-        <PolicyList
-          items={[
-            "Solicitar acesso aos seus dados pessoais",
-            "Solicitar correção dos seus dados pessoais",
-            "Solicitar eliminação dos seus dados pessoais",
-            "Objetar ao processamento dos seus dados pessoais",
-            "Solicitar restrição do processamento dos seus dados pessoais",
-            "Solicitar transferência dos seus dados pessoais",
-            "Direito de retirar consentimento",
-          ]}
-        />
-      </PolicySection>
+            <section className="bg-white rounded-lg p-8 shadow-sm border border-orange-100">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Segurança de Dados</h2>
+              <p className="text-gray-700 leading-relaxed">
+                Implementámos medidas de segurança apropriadas para prevenir que os seus dados pessoais sejam
+                acidentalmente perdidos, usados ou acedidos de forma não autorizada, alterados ou divulgados. Além
+                disso, limitamos o acesso aos seus dados pessoais àqueles funcionários, agentes, contratados e outros
+                terceiros que têm uma necessidade comercial de saber.
+              </p>
+            </section>
 
-      <PolicySection title="Links de Terceiros" delay={800}>
-        <PolicyParagraph>
-          Este website pode incluir links para websites de terceiros, plug-ins e aplicações. Clicar nesses links ou
-          ativar essas conexões pode permitir que terceiros recolham ou partilhem dados sobre si. Não controlamos estes
-          websites de terceiros e não somos responsáveis pelas suas declarações de privacidade.
-        </PolicyParagraph>
-      </PolicySection>
+            <section className="bg-white rounded-lg p-8 shadow-sm border border-orange-100">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Retenção de Dados</h2>
+              <p className="text-gray-700 leading-relaxed">
+                Só reteremos os seus dados pessoais pelo tempo razoavelmente necessário para cumprir os propósitos para
+                os quais os recolhemos, incluindo para os propósitos de satisfazer quaisquer requisitos legais,
+                regulamentares, fiscais, contabilísticos ou de relatório.
+              </p>
+            </section>
 
-      <PolicySection title="Alterações à Política de Privacidade" delay={900}>
-        <PolicyParagraph>
-          Podemos atualizar a nossa política de privacidade de tempos a tempos. Notificá-lo-emos de quaisquer alterações
-          publicando a nova política de privacidade nesta página e atualizando a data "Última atualização" no topo desta
-          política de privacidade.
-        </PolicyParagraph>
-      </PolicySection>
+            <section className="bg-white rounded-lg p-8 shadow-sm border border-orange-100">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Os Seus Direitos Legais</h2>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Sob certas circunstâncias, tem direitos sob as leis de proteção de dados em relação aos seus dados
+                pessoais, incluindo o direito de:
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-gray-700">
+                <li>Solicitar acesso aos seus dados pessoais</li>
+                <li>Solicitar correção dos seus dados pessoais</li>
+                <li>Solicitar eliminação dos seus dados pessoais</li>
+                <li>Objetar ao processamento dos seus dados pessoais</li>
+                <li>Solicitar restrição do processamento dos seus dados pessoais</li>
+                <li>Solicitar transferência dos seus dados pessoais</li>
+                <li>Direito de retirar consentimento</li>
+              </ul>
+            </section>
 
-      <PolicySection title="Contacte-nos" delay={1000}>
-        <PolicyParagraph>
-          Se tiver questões sobre esta política de privacidade ou as nossas práticas de privacidade, contacte-nos em:
-          privacidade@ptmelhoressitesdeapostas.com
-        </PolicyParagraph>
-      </PolicySection>
-    </PolicyPageLayout>
+            <section className="bg-white rounded-lg p-8 shadow-sm border border-orange-100">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Links de Terceiros</h2>
+              <p className="text-gray-700 leading-relaxed">
+                Este website pode incluir links para websites de terceiros, plug-ins e aplicações. Clicar nesses links
+                ou ativar essas conexões pode permitir que terceiros recolham ou partilhem dados sobre si. Não
+                controlamos estes websites de terceiros e não somos responsáveis pelas suas declarações de privacidade.
+              </p>
+            </section>
+
+            <section className="bg-white rounded-lg p-8 shadow-sm border border-orange-100">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Alterações à Política de Privacidade</h2>
+              <p className="text-gray-700 leading-relaxed">
+                Podemos atualizar a nossa política de privacidade de tempos a tempos. Notificá-lo-emos de quaisquer
+                alterações publicando a nova política de privacidade nesta página e atualizando a data "Última
+                atualização" no topo desta política de privacidade.
+              </p>
+            </section>
+
+            <section className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-lg p-8 shadow-sm border border-orange-200">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Contacte-nos</h2>
+              <p className="text-gray-700 leading-relaxed">
+                Se tiver questões sobre esta política de privacidade ou as nossas práticas de privacidade, contacte-nos
+                em:{" "}
+                <a
+                  href="mailto:privacidade@ptmelhoressitesdeapostas.com"
+                  className="text-mclaren-gold hover:text-mclaren-orange font-semibold underline"
+                >
+                  privacidade@ptmelhoressitesdeapostas.com
+                </a>
+              </p>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <Footer />
+    </>
   )
 }

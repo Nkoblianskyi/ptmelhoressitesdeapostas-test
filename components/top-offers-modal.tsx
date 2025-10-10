@@ -14,17 +14,17 @@ export function TopOffersModal({ sites }: TopOffersModalProps) {
   const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
-
+    console.log("[v0] TopOffersModal mounted")
 
     const hasVisited = localStorage.getItem("hasVisitedBefore")
-
+    console.log("[v0] hasVisited:", hasVisited)
 
     if (!hasVisited) {
       const timer = setTimeout(() => {
-      
+        console.log("[v0] Opening modal after 3 seconds")
         setIsOpen(true)
         localStorage.setItem("hasVisitedBefore", "true")
-      }, 12000)
+      }, 3000)
 
       return () => clearTimeout(timer)
     }
